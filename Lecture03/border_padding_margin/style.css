@@ -1,0 +1,17 @@
+div {
+    margin: 20px;
+    padding: 20px;
+    border: 12px dotted black;
+}
+
+#d1 {
+    background-color: chocolate;
+}
+
+#d2 {
+    background-color: purple;
+}
+
+#d3 {
+    background-color: lightskyblue;
+}

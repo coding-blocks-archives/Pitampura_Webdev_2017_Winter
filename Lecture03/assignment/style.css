@@ -1,0 +1,19 @@
+li {
+    color: blue;
+}
+
+li li {
+    height: 0;
+    visibility: hidden;
+    color: green;
+}
+
+li li li {
+    color: red;
+}
+
+li:hover > * > li {
+    visibility: visible;
+    height: auto;
+}
+
