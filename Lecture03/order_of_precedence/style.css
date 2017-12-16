@@ -1,0 +1,19 @@
+div {
+    font-size: 18pt;
+    font-weight: bold;
+    color: red;
+}
+
+
+#myid {
+    background-color: lightseagreen !important;
+}
+
+.myclass {
+    background-color: lightblue;
+}
+
+p {
+    background-color: lightcoral !important;
+}
+

@@ -1,0 +1,18 @@
+div div {
+    margin-left: 30px;
+}
+
+div p {
+    font-style: italic;
+}
+div > p {
+    font-weight: bold;
+}
+
+div + div {
+    color: red;
+}
+
+div ~ div {
+    font-size: 20pt;
+}

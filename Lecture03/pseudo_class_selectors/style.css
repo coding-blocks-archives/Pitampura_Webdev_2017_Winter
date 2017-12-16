@@ -1,0 +1,13 @@
+p {
+    font-size: 30pt;
+    background-color: aquamarine;
+}
+
+p:hover {
+    background-color: lightcoral;
+    font-weight: bold;
+}
+
+input:focus {
+    font-size: 30pt;
+}

@@ -1,0 +1,17 @@
+p {
+    font-size: 26pt;
+    height: 70px;
+}
+#p1 {
+    display: inline-block;
+    background-color: lightcoral;
+}
+
+#p2 {
+    display: inline-block;
+    background-color: lightblue;
+}
+
+#p3 {
+    background-color: yellow;
+}
