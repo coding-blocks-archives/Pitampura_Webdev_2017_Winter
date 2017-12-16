@@ -1,0 +1,15 @@
+* {
+    color: red;
+}
+
+span {
+    font-weight: bold;
+}
+
+.redbg {
+    background-color: lightcoral;
+}
+
+.slantext {
+    font-style: italic;
+}
