@@ -10,10 +10,17 @@ btnMakeList.onclick = function () {
     let startTime = (new Date()).getTime();
 
     let count = parseInt(countBox.value)
-
+    let listContent = "", output = "";
     for (let i = 0; i < count; i++) {
-        list.innerHTML += "<li>" + i + "</li>"
+        output = ""
+        if (i % 3 === 0) output = "fizz"
+        if (i % 5 === 0) output += "buzz"
+        if (output === "") output = i
+
+        listContent += "<li>" + output + "</li>"
     }
+
+    list.innerHTML = listContent
 
     let endTime = (new Date()).getTime()
     console.log(endTime - startTime)
