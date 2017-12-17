@@ -1,0 +1,23 @@
+div {
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+    border: solid darkmagenta 2px;
+    background-color: lightskyblue;
+    transition-duration: 2s;
+}
+
+#d1:hover {
+    background-color: red;
+}
+
+#d2:hover {
+    height: 2px;
+}
+#d3:hover {
+    transform: rotate(90deg)
+}
+
+#d4:hover {
+    transform: scaleX(-1);
+}

@@ -1,0 +1,75 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(500px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+div.container {
+    background-color: lightskyblue;
+    height: 600px;
+    width: 600px;
+}
+
+div.box {
+    background-color: firebrick;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
+    display: inline-block;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: 100;
+}
+
+div.ball {
+    position: absolute;
+    top: 275px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: mediumblue;
+    border-radius: 50%;
+}
+@keyframes goleft {
+    0% { transform: translateX(0) }
+    50% { transform: translateX(-500px) }
+    100% { transform: translateX(0) }
+}
+div.container:active div.ball {
+    animation-play-state: initial;
+}
+
+div.container div.ball {
+    animation-name: goleft;
+    animation-duration: 3s;
+    animation-play-state: paused;
+    animation-iteration-count: 100;
+    animation-timing-function: linear;
+}
+
+#d1 {
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+#d2 {
+    animation-delay: 2s;
+    animation-duration: 4s;
+}
+#d3 {
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+#d4 {
+    animation-delay: 1.5s;
+    animation-duration: 4s;
+}
+#d5 {
+    animation-delay: 0.5s;
+    animation-duration: 4s;
+}

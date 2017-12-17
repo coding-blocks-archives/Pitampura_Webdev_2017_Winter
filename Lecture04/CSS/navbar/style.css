@@ -1,0 +1,36 @@
+ul.nav {
+    display: block;
+    padding-left: 0;
+}
+
+ul.nav li {
+    display: inline-block;
+    background-color: lightblue;
+}
+ul.nav ul {
+    position: relative;
+    padding-left: 0;
+}
+ul.nav ul {
+    visibility: hidden;
+    height: 0;
+}
+ul.nav > li:hover > ul {
+    visibility: visible;
+    height: auto;
+}
+ul.nav > li:hover > ul > li {
+    display: block;
+}
+
+ul.nav li li {
+    background-color: lightpink;
+}
+
+ul.nav li li {
+    display: block;
+}
+
+ul.nav li li li {
+    background-color: lightgreen;
+}

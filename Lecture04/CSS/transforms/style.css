@@ -1,0 +1,19 @@
+div {
+    margin-left: 40px;
+    height: 50px;
+    width: 50px;
+    border: solid red 2px;
+    background-color: lightgreen;
+}
+
+#d5 {
+    transform: scaleX(2);
+}
+
+#d4 {
+    transform: scaleY(0.5)
+}
+
+#d6 {
+    transform: translate(20px, -30px)
+}
