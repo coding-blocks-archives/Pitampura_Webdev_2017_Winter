@@ -1,9 +1,28 @@
+// let id
+// setTimeout(function () {
+//     clearInterval(id)
+// }, 1000)
+//
+// id = setInterval(function () {
+//     console.log('a')
+// }, 10)
 
+// let id = (setTimeout(function () {
+//     clearInterval(id)
+// }, 1000), setInterval(function () {
+//     console.log('a')
+// }, 10))
 
-for (var i = 0; i < 5; i++) {
-    (function (i) {
-        setTimeout(function () {
-            console.log(i)
-        }, i*1000)
-    })(i)
-}
+// setTimeout((id) => clearInterval(id), 1000, setInterval(function () {
+//     console.log('a')
+// }, 10))
+
+((x) => setTimeout(() => clearInterval(x), 1000))(setInterval(() => console.log('a'), 10))
+
+// (function (x) {
+//     setTimeout(function () {
+//         clearInterval(x)
+//     }, 1000)
+// })(setInterval(function () {
+//     console.log('a')
+// }, 10))
