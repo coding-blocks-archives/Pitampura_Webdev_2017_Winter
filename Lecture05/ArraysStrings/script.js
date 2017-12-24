@@ -1,19 +1,24 @@
-let nArr = [1,2,3,4,5,6,7]
-let sArr = ['hello', 'wassup']
+let nums = [3,7,12,15]
 
-console.log(sArr.join('-'))
-sArr.splice(4,2, 9,8,7)
+let sqr = (a) => Math.pow(a, 2)
+let sum = (a, i) => a + i
 
+let rms = Math.sqrt(nums.map(sqr).reduce(sum) / nums.length)
 
-let arr1 = [5,1,8,3,9,11,24,4,3]
-let arr2 = arr1.join('-').split('-')
+let todos = [
+    {task: 'Task X', done: false, priority: 4},
+    {task: 'Task K', done: true, priority: 2},
+    {task: 'Task L', done: false, priority: 3},
+    {task: 'Task P2', done: true, priority: 1},
+    {task: 'Task T1', done: false, priority: 5},
+    {task: 'Task K4', done: false, priority: 1},
+    {task: 'Task A', done: true, priority: 2},
+]
 
-function universalCompare(a, b) {
-    return a > b
-}
+let order = todos
+    .filter(i => !i.done)
+    .sort((a,b) => b.priority - a.priority)
+    .map(i => i.task.substring(5))
+    .reduce((a, i) => a + ' > ' + i)
 
-
-arr1.sort((a,b) => a > b)
-arr2.sort((a,b) => a > b)
-console.log(arr1)
-console.log(arr2)
+// order = 'T1 > X > .... '
