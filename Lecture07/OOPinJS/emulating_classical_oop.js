@@ -17,7 +17,9 @@ function Person(name, age, houseNo) {
     }
     this.getHouse = () => house
 }
+Person.hello = function () {
 
+}
 // like static in classical OOP
 Person.prototype.school = "Hogwarts"
 Person.prototype.isAdult = function () {
