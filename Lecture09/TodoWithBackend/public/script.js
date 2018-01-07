@@ -58,9 +58,9 @@ $(function () {
 // arr = [a,b,c,d,e,f,g]
 
 function moveUp(arr, i) {
-    arr.splice(i,0, arr.splice(i-1,1)[0])
+    arr.splice(i,0, arr.splice(i-1, 1)[0])
 }
 
 function moveDown (arr, i) {
-    arr.splice(i,0, arr.splice(i+1,1)[0])
+    arr.splice(i,0, arr.splice(i+1, 1)[0])
 }
