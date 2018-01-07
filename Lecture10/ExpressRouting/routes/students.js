@@ -43,7 +43,7 @@ route.use('/:id', validateId)
 
 route.get('/:id', idExists, (req, res) => {
 
-    res.send(students[parseInt(req.params.id)])
+    res.send(students[req.params.id])
 })
 
 route.put('/:id', (req, res) => {
