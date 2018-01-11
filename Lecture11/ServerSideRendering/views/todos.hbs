@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todos</title>
+</head>
+<body>
+
+<h1>Todo List</h1>
+<ul>
+
+    {{#each todos as |todo|}}
+        <li>{{todo.task}}</li>
+    {{/each}}
+
+</ul>
+
+</body>
+</html>
