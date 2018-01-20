@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{{#each answer as |ans|}}
+    <div>{{ans}}</div>
+{{/each}}
+
+<form action="/math" method="post">
+    <div>What is 2 + 2 ? </div>
+    <input type="number" name="answer">
+    <input type="submit" value="SUBMIT">
+</form>
+
+</body>
+</html>
