@@ -1,0 +1,25 @@
+
+<form method="post">
+    <div class="form-group p-4">
+        <label for="inputCategoryName">Category Name</label>
+        <input type="text"
+               class="form-control"
+               id="inputCategoryName"
+               name="name"
+               placeholder="Enter Category Name">
+        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+        <label for="inputCategoryTax">Category Name</label>
+        <input type="text"
+               class="form-control"
+               id="inputCategoryTax"
+               name="tax_perc"
+               placeholder="Enter Category Tax Bracket (in %)">
+        <input type="submit" class="btn btn-success m-2" value="Submit">
+        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+
+    </div>
+</form>
+
+{{#each categories as |category|}}
+    <div>{{category.name}}</div>
+{{/each}}

@@ -68,5 +68,7 @@ db.sync({})
 exports = module.exports = {
     db,
     Category,
-    Product
+    Product,
+    User,
+    CartItem
 }
