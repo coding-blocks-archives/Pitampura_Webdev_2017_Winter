@@ -1,0 +1,8 @@
+{
+  "DB": {
+    "NAME": "shopdb",
+    "USERNAME": "shopper",
+    "PASSWORD": "shopper",
+    "HOST": "localhost"
+  }
+}
