@@ -18,7 +18,7 @@
     "nyc": "^11.4.1"
   },
   "scripts": {
-    "test": "ENV_TESTING=true mocha tests",
+    "test": "set ENV_TESTING=true && mocha tests",
     "coverage": "nyc npm run test",
     "coverage.report": "nyc --reporter=html npm run test"
   },

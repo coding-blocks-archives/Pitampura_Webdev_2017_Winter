@@ -20,8 +20,26 @@
         </div>
     </form>
 {{/if}}
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Category</th>
+        <th>Tax (%)</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each categories as |category|}}
+        <tr>
+            <td>{{category.name}}</td>
+            <td>{{category.tax_perc}}%</td>
+            <td>
+                <button class="btn btn-sm btn-danger">
+                    DELETE
+                </button>
+            </td>
+        </tr>
 
+    {{/each}}
+    </tbody>
 
-{{#each categories as |category|}}
-    <div>{{category.name}}</div>
-{{/each}}
+</table>
