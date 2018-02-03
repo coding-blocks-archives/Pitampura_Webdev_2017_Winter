@@ -20,8 +20,9 @@ describe('Category Model tests', () => {
         }).catch(err => done(err))
     })
 
-    // after(() => {
-    //     db.close()
-    // })
 
+})
+
+after(() => {
+    db.close()
 })

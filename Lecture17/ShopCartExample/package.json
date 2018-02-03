@@ -18,9 +18,9 @@
     "nyc": "^11.4.1"
   },
   "scripts": {
-    "test": "mocha tests",
-    "coverage": "nyc mocha tests",
-    "coverage.report": "nyc --reporter=html mocha tests"
+    "test": "ENV_TESTING=true mocha tests",
+    "coverage": "nyc npm run test",
+    "coverage.report": "nyc --reporter=html npm run test"
   },
   "author": "",
   "license": "ISC"

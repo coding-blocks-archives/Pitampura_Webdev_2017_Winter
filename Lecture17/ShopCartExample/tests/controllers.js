@@ -6,10 +6,6 @@ const {db, Category} = require('../src/db/models')
 const catCtrl = require('../src/controllers/categories')
 
 
-// before((done) => {
-//     db.sync({force: true}).then(() => done())
-// })
-
 describe('Category controller', () => {
 
     it('should add succeed for one category', (done) => {
@@ -32,6 +28,3 @@ describe('Category controller', () => {
         })
     })
 })
-
-
-after(() => db.close())
