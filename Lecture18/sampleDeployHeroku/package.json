@@ -1,0 +1,22 @@
+{
+  "name": "sampledeployheroku",
+  "version": "1.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Bhavya Aggarwal <bhavyaaggarwal1209@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql2": "^1.5.1",
+    "pg": "^6.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.32.6"
+  },
+  "engines": {
+    "node": "8"
+  }
+}

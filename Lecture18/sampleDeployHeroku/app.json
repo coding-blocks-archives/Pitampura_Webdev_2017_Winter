@@ -1,0 +1,8 @@
+{
+  "name": "sample-deploy-webapp",
+  "repository": "https://github.com/bhavyaagg/sample-deploy-webapp",
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ]
+
+}
